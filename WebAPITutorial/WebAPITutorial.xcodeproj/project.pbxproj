@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF82F2221868C83E00F13927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2211868C83E00F13927 /* Foundation.framework */; };
+		BF82F2241868C83E00F13927 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2231868C83E00F13927 /* CoreGraphics.framework */; };
+		BF82F2261868C83E00F13927 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2251868C83E00F13927 /* UIKit.framework */; };
+		BF82F22C1868C83E00F13927 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF82F22A1868C83E00F13927 /* InfoPlist.strings */; };
+		BF82F22E1868C83E00F13927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82F22D1868C83E00F13927 /* main.m */; };
+		BF82F2321868C83E00F13927 /* WebAPITutorialAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82F2311868C83E00F13927 /* WebAPITutorialAppDelegate.m */; };
+		BF82F2351868C83E00F13927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF82F2331868C83E00F13927 /* Main.storyboard */; };
+		BF82F2381868C83E00F13927 /* WebAPITutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82F2371868C83E00F13927 /* WebAPITutorialViewController.m */; };
+		BF82F23A1868C83E00F13927 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF82F2391868C83E00F13927 /* Images.xcassets */; };
+		BF82F2411868C83E00F13927 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2401868C83E00F13927 /* XCTest.framework */; };
+		BF82F2421868C83E00F13927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2211868C83E00F13927 /* Foundation.framework */; };
+		BF82F2431868C83E00F13927 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF82F2251868C83E00F13927 /* UIKit.framework */; };
+		BF82F24B1868C83E00F13927 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF82F2491868C83E00F13927 /* InfoPlist.strings */; };
+		BF82F24D1868C83E00F13927 /* WebAPITutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82F24C1868C83E00F13927 /* WebAPITutorialTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF82F2441868C83E00F13927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF82F2161868C83E00F13927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF82F21D1868C83E00F13927;
+			remoteInfo = WebAPITutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF82F21E1868C83E00F13927 /* WebAPITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAPITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF82F2211868C83E00F13927 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF82F2231868C83E00F13927 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF82F2251868C83E00F13927 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF82F2291868C83E00F13927 /* WebAPITutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebAPITutorial-Info.plist"; sourceTree = "<group>"; };
+		BF82F22B1868C83E00F13927 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF82F22D1868C83E00F13927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF82F22F1868C83E00F13927 /* WebAPITutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebAPITutorial-Prefix.pch"; sourceTree = "<group>"; };
+		BF82F2301868C83E00F13927 /* WebAPITutorialAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebAPITutorialAppDelegate.h; sourceTree = "<group>"; };
+		BF82F2311868C83E00F13927 /* WebAPITutorialAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAPITutorialAppDelegate.m; sourceTree = "<group>"; };
+		BF82F2341868C83E00F13927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF82F2361868C83E00F13927 /* WebAPITutorialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebAPITutorialViewController.h; sourceTree = "<group>"; };
+		BF82F2371868C83E00F13927 /* WebAPITutorialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAPITutorialViewController.m; sourceTree = "<group>"; };
+		BF82F2391868C83E00F13927 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF82F23F1868C83E00F13927 /* WebAPITutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAPITutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF82F2401868C83E00F13927 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF82F2481868C83E00F13927 /* WebAPITutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebAPITutorialTests-Info.plist"; sourceTree = "<group>"; };
+		BF82F24A1868C83E00F13927 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF82F24C1868C83E00F13927 /* WebAPITutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAPITutorialTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF82F21B1868C83E00F13927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F2241868C83E00F13927 /* CoreGraphics.framework in Frameworks */,
+				BF82F2261868C83E00F13927 /* UIKit.framework in Frameworks */,
+				BF82F2221868C83E00F13927 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82F23C1868C83E00F13927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F2411868C83E00F13927 /* XCTest.framework in Frameworks */,
+				BF82F2431868C83E00F13927 /* UIKit.framework in Frameworks */,
+				BF82F2421868C83E00F13927 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF82F2151868C83D00F13927 = {
+			isa = PBXGroup;
+			children = (
+				BF82F2271868C83E00F13927 /* WebAPITutorial */,
+				BF82F2461868C83E00F13927 /* WebAPITutorialTests */,
+				BF82F2201868C83E00F13927 /* Frameworks */,
+				BF82F21F1868C83E00F13927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF82F21F1868C83E00F13927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F21E1868C83E00F13927 /* WebAPITutorial.app */,
+				BF82F23F1868C83E00F13927 /* WebAPITutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF82F2201868C83E00F13927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F2211868C83E00F13927 /* Foundation.framework */,
+				BF82F2231868C83E00F13927 /* CoreGraphics.framework */,
+				BF82F2251868C83E00F13927 /* UIKit.framework */,
+				BF82F2401868C83E00F13927 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF82F2271868C83E00F13927 /* WebAPITutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F2301868C83E00F13927 /* WebAPITutorialAppDelegate.h */,
+				BF82F2311868C83E00F13927 /* WebAPITutorialAppDelegate.m */,
+				BF82F2331868C83E00F13927 /* Main.storyboard */,
+				BF82F2361868C83E00F13927 /* WebAPITutorialViewController.h */,
+				BF82F2371868C83E00F13927 /* WebAPITutorialViewController.m */,
+				BF82F2391868C83E00F13927 /* Images.xcassets */,
+				BF82F2281868C83E00F13927 /* Supporting Files */,
+			);
+			path = WebAPITutorial;
+			sourceTree = "<group>";
+		};
+		BF82F2281868C83E00F13927 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F2291868C83E00F13927 /* WebAPITutorial-Info.plist */,
+				BF82F22A1868C83E00F13927 /* InfoPlist.strings */,
+				BF82F22D1868C83E00F13927 /* main.m */,
+				BF82F22F1868C83E00F13927 /* WebAPITutorial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF82F2461868C83E00F13927 /* WebAPITutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F24C1868C83E00F13927 /* WebAPITutorialTests.m */,
+				BF82F2471868C83E00F13927 /* Supporting Files */,
+			);
+			path = WebAPITutorialTests;
+			sourceTree = "<group>";
+		};
+		BF82F2471868C83E00F13927 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF82F2481868C83E00F13927 /* WebAPITutorialTests-Info.plist */,
+				BF82F2491868C83E00F13927 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF82F21D1868C83E00F13927 /* WebAPITutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF82F2501868C83E00F13927 /* Build configuration list for PBXNativeTarget "WebAPITutorial" */;
+			buildPhases = (
+				BF82F21A1868C83E00F13927 /* Sources */,
+				BF82F21B1868C83E00F13927 /* Frameworks */,
+				BF82F21C1868C83E00F13927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebAPITutorial;
+			productName = WebAPITutorial;
+			productReference = BF82F21E1868C83E00F13927 /* WebAPITutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF82F23E1868C83E00F13927 /* WebAPITutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF82F2531868C83E00F13927 /* Build configuration list for PBXNativeTarget "WebAPITutorialTests" */;
+			buildPhases = (
+				BF82F23B1868C83E00F13927 /* Sources */,
+				BF82F23C1868C83E00F13927 /* Frameworks */,
+				BF82F23D1868C83E00F13927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF82F2451868C83E00F13927 /* PBXTargetDependency */,
+			);
+			name = WebAPITutorialTests;
+			productName = WebAPITutorialTests;
+			productReference = BF82F23F1868C83E00F13927 /* WebAPITutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF82F2161868C83E00F13927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WebAPITutorial;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Drawrz.com;
+				TargetAttributes = {
+					BF82F23E1868C83E00F13927 = {
+						TestTargetID = BF82F21D1868C83E00F13927;
+					};
+				};
+			};
+			buildConfigurationList = BF82F2191868C83E00F13927 /* Build configuration list for PBXProject "WebAPITutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF82F2151868C83D00F13927;
+			productRefGroup = BF82F21F1868C83E00F13927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF82F21D1868C83E00F13927 /* WebAPITutorial */,
+				BF82F23E1868C83E00F13927 /* WebAPITutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF82F21C1868C83E00F13927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F23A1868C83E00F13927 /* Images.xcassets in Resources */,
+				BF82F22C1868C83E00F13927 /* InfoPlist.strings in Resources */,
+				BF82F2351868C83E00F13927 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82F23D1868C83E00F13927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F24B1868C83E00F13927 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF82F21A1868C83E00F13927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F2321868C83E00F13927 /* WebAPITutorialAppDelegate.m in Sources */,
+				BF82F22E1868C83E00F13927 /* main.m in Sources */,
+				BF82F2381868C83E00F13927 /* WebAPITutorialViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82F23B1868C83E00F13927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82F24D1868C83E00F13927 /* WebAPITutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF82F2451868C83E00F13927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF82F21D1868C83E00F13927 /* WebAPITutorial */;
+			targetProxy = BF82F2441868C83E00F13927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF82F22A1868C83E00F13927 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF82F22B1868C83E00F13927 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF82F2331868C83E00F13927 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF82F2341868C83E00F13927 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF82F2491868C83E00F13927 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF82F24A1868C83E00F13927 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF82F24E1868C83E00F13927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF82F24F1868C83E00F13927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF82F2511868C83E00F13927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebAPITutorial/WebAPITutorial-Prefix.pch";
+				INFOPLIST_FILE = "WebAPITutorial/WebAPITutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF82F2521868C83E00F13927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebAPITutorial/WebAPITutorial-Prefix.pch";
+				INFOPLIST_FILE = "WebAPITutorial/WebAPITutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF82F2541868C83E00F13927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebAPITutorial.app/WebAPITutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebAPITutorial/WebAPITutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WebAPITutorialTests/WebAPITutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF82F2551868C83E00F13927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebAPITutorial.app/WebAPITutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebAPITutorial/WebAPITutorial-Prefix.pch";
+				INFOPLIST_FILE = "WebAPITutorialTests/WebAPITutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF82F2191868C83E00F13927 /* Build configuration list for PBXProject "WebAPITutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF82F24E1868C83E00F13927 /* Debug */,
+				BF82F24F1868C83E00F13927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF82F2501868C83E00F13927 /* Build configuration list for PBXNativeTarget "WebAPITutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF82F2511868C83E00F13927 /* Debug */,
+				BF82F2521868C83E00F13927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF82F2531868C83E00F13927 /* Build configuration list for PBXNativeTarget "WebAPITutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF82F2541868C83E00F13927 /* Debug */,
+				BF82F2551868C83E00F13927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF82F2161868C83E00F13927 /* Project object */;
+}
