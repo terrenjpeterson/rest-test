@@ -7,8 +7,10 @@
 //
 
 #import "WebAPITutorialViewController.h"
+
 #define kStrikeIronUserID @"yourstrikeironuserid@youremail.com"
 #define kStrikeIronPassword @"yourstrikeironpassword"
+#define myDrawrzAcct @"787123133"
 
 @interface WebAPITutorialViewController ()
 
@@ -37,10 +39,10 @@
     // clear out the return message label
     self.verificationResults.text = @"";
     
-    // create the REST call string.
-    NSString *restCallString = [NSString stringWithFormat:@"http://drawrz.herokuapp.com/getMessages?787123133"];
+    // create the REST call string including setting variables in the URI
+    NSString *restCallString = [NSString stringWithFormat:@"http://drawrz.herokuapp.com/getMessages?%@", myDrawrzAcct];
 
-    // create the URL and make the rest call.
+    // create the URL and create the request
     NSURL *restURL = [NSURL URLWithString:restCallString];
     NSURLRequest *restRequest = [NSURLRequest requestWithURL:restURL];
     
@@ -52,6 +54,7 @@
         self.apiReturnXMLData = nil;
     }
     
+    // create the url connection and fire the request
     currentConnection = [[NSURLConnection alloc] initWithRequest:restRequest delegate:self];
     
     // if the connection was successful, create the XML that will be returned
@@ -65,4 +68,30 @@
     return YES;
     
 }
+
+// Delegate for NSURLConnection - didReceiveResponse
+- (void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [self.apiReturnXMLData setLength:0];
+}
+
+// Delegate for NSURLConnection - didReceiveData
+- (void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
+{
+    [self.apiReturnXMLData appendData:data];
+}
+
+// Delegate for NSURLConnection - didFailWithError
+- (void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error
+{
+    NSLog(@"URL Connection Failed!");
+    currentConnection = nil;
+}
+
+// Delegate for NSURLConnection - connectionDidFinishLoading (transaction complete)
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    currentConnection = nil;
+}
+
 @end
