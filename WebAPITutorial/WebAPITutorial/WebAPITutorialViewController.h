@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebAPITutorialViewController : UIViewController
-
+@interface WebAPITutorialViewController : UIViewController <UITextFieldDelegate>
+{
+    NSURLConnection *currentConnection;
+}
+- (IBAction)verifyEmail:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *emailAddress;
+@property (weak, nonatomic) IBOutlet UILabel *verificationResults;
+@property (copy, nonatomic) NSString *enteredEmailAddress;
+@property (retain, nonatomic) NSMutableData *apiReturnXMLData;
 @end
